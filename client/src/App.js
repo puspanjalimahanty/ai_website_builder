@@ -12,7 +12,7 @@ function App() {
 
     try {
       setLoading(true);
-      const res = await axios.post("http://localhost:5000/api/generate", {
+      const res = await axios.post("https://ai-website-builder-4ih5.onrender.com/api/generate", {
         prompt,
       });
       setCode(res.data.code);
